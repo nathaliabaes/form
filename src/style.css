@@ -6,9 +6,9 @@ body {
     margin: 0;
 
     background: url("./img/weather.jpg");
-    background-size: 150% 150%; 
+    background-size: cover; 
     background-repeat: no-repeat;
-    background-position: 0% 50%; 
+    background-position: center; 
     animation: gradientBG 35s ease infinite; /* animação contínua */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -34,6 +34,12 @@ body {
     z-index: 10; 
     overflow: hidden;
 }
+
+img {
+    width: 100%;
+    height: auto;
+}
+
 form {
     display: flex;
     width: 100%;
@@ -121,24 +127,68 @@ body.pag2 {
     color: white; 
 }
 
-@media (max-width: 360px) {
+@media (max-width: 480px) {
+
+    body {
+        background-size: cover; /* imagem menos esticada */
+        background-position: center;
+    }
+
     .glass-container {
-        padding: 20px;
+        width: 90%;
+        max-width: 300px;
+        padding: 25px 20px;
     }
 
     h1 {
         font-size: 22px;
     }
 
-    .enviado {
-        font-size: 22px;
+    .enviar {
+        width: 80%;
+        font-size: 18px;
     }
 
-    .voltar {
+    .voltar,
+    .enviado {
         font-size: 18px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background-size: cover;
+        background-position: center;
+    }
+
+    .glass-container {
+        width: 80%;
+        max-width: 350px;
+        padding: 30px 25px;
+    }
+
+    h1 {
+        font-size: 24px;
     }
 
     .enviar {
         width: 70%;
+        font-size: 20px;
+    }
+
+    .voltar,
+    .enviado {
+        font-size: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 }
