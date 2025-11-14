@@ -7,6 +7,7 @@
 
 <p align="center">
     <img src="./src/img/screenshot.png" alt="sun" width="600px">
+    <img src="./src/img/screenshot2.png" alt="Página de confirmação" width="600px">
 </p>
 
 <p align="center">
