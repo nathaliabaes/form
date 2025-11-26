@@ -6,7 +6,7 @@ body {
     margin: 0;
 
     background: url("./img/weather.jpg");
-    background-size: cover; 
+    background-size: 160% auto; 
     background-repeat: no-repeat;
     background-position: center; 
     animation: gradientBG 35s ease infinite; /* animação contínua */
@@ -130,7 +130,7 @@ body.pag2 {
 @media (max-width: 480px) {
 
     body {
-        background-size: cover; /* imagem menos esticada */
+        background-size: 180% auto;
         background-position: center;
     }
 
